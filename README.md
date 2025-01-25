@@ -15,14 +15,11 @@ Recent advancements in large language models (LLMs) revolutionize the field of i
 If you find this work useful in your research, please star our repository and consider citing:
 
 ```
-@misc{weng2025dothinkconformitylarge,
+@inproceedings{weng2025benchform,
       title={Do as We Do, Not as You Think: the Conformity of Large Language Models}, 
-      author={Zhiyuan Weng and Guikun Chen and Wenguan Wang},
-      year={2025},
-      eprint={2501.13381},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2501.13381}, 
+      author={Weng, Zhiyuan and Chen, Guikun and Wang, Wenguan},
+      booktitle={ICLR},
+      year={2025}
 }
 ```
 
