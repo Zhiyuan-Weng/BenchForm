@@ -1,10 +1,10 @@
-# Do as We Do, Not as You Think: the Conformity of Large Language Models (ICLR 2025)
+# Do as We Do, Not as You Think: the Conformity of Large Language Models (ICLR 2025 Oral)
 
 ![](docs/protocols.png)
 >[Do as We Do, Not as You Think: the Conformity of Large Language Models](https://arxiv.org/abs/2501.13381) <br>
 >[Zhiyuan Weng](https://scholar.google.com/citations?user=2Lf0vYQAAAAJ), [Guikun Chen](https://scholar.google.com/citations?user=I1TOdpkAAAAJ), [Wenguan Wang](https://sites.google.com/view/wenguanwang)
 
-This is the official implementation of "Do as We Do, Not as You Think: the Conformity of Large Language Models" (Accepted at ICLR 2025).
+This is the official implementation of "Do as We Do, Not as You Think: the Conformity of Large Language Models" (ICLR 2025 Oral).
 
 ## Abstract
 
