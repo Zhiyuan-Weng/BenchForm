@@ -49,17 +49,23 @@ For open-source models, we use Ollama for deployment. You need to configure the 
 
 Run the following command to evaluate conformity on BenchForm:
 
-`python eval.py --model <model> --save_path <output_path>`;
+```bash
+python eval.py --model <model> --save_path <output_path>
+```
 
 Then, you can use the following command to obtain the metrics:
 
-`python analysis.py --data_path <evaluation_results>`.
+```bash
+python analysis.py --data_path <evaluation_results>
+```
 
 ### Ablations
 
 For the ablations of interaction time and peer pressure, you can change the corresponding args(previous_discussions_rounds should be at most 5 and majority_num should be between 3 and 6 (inclusive)):
 
-`python eval.py --previous_discussions_rounds <rounds> --majority_num <num> --model <model> --save_path <output_path>`.
+```bash
+python eval.py --previous_discussions_rounds <rounds> --majority_num <num> --model <model> --save_path <output_path>
+```
 
 The analysis method is the same as above.
 
@@ -67,21 +73,29 @@ The analysis method is the same as above.
 
 To analyze how the subject agent rationalizes its conforming behavior, run:
 
-`python behavioral_study.py --data_path <evaluation_results> --model <the model used to classify>`.
+```bash
+python behavioral_study.py --data_path <evaluation_results> --model <the model used to classify>
+```
 
 ### Mitigation
 
 For empowered persona, you can simply add `--mode empowered`, e.g.:
 
-`python eval.py --model <model> --save_path <output_path> --mode empowered`;
+```bash
+python eval.py --model <model> --save_path <output_path> --mode empowered
+```
 
 For reflection, run the following command:
 
-`python reflection.py --data_path <evaluation_results>`;
+```bash
+python reflection.py --data_path <evaluation_results>
+```
 
 Then, you can use the following command for analysis:
 
-`python analysis_reflection.py --data_path <evaluation_results>`.
+```bash
+python analysis_reflection.py --data_path <evaluation_results>
+```
 
 ## Citation
 
