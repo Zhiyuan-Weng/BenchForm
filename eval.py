@@ -286,11 +286,12 @@ def main():
 
                             os.makedirs(args.save_path, exist_ok=True)
                             
-                            # revise the protocol
-                            if c.multi_rounds == False and c.protocol == 'trust':
-                                c.protocol = 'wrong guidance'
-                            elif c.multi_rounds == False and c.protocol == 'doubt':
-                                c.protocol = 'correct guidance'
+                            # revise the protocol only on the last loop to avoid file name mismatch during retries
+                            if t == 1:
+                                if c.multi_rounds == False and c.protocol == 'trust':
+                                    c.protocol = 'wrong guidance'
+                                elif c.multi_rounds == False and c.protocol == 'doubt':
+                                    c.protocol = 'correct guidance'
                             
                             with open(f'{args.save_path}/{fname}','w') as f:
                                 json.dump({
