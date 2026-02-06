@@ -97,6 +97,31 @@ Then, you can use the following command for analysis:
 python analysis_reflection.py --data_path <evaluation_results>
 ```
 
+## Data Utilities
+
+### JSONL Format
+
+Pre-generated JSONL files are available in `data/jsonl/` for integration with ML evaluation frameworks. Each line is a JSON object matching the original BBH format:
+
+```json
+{
+  "idx": 0,
+  "inputs": "...",
+  "targets": ["No"],
+  "multiple_choice_targets": ["No", "Yes"],
+  "multiple_choice_scores": [1, 0],
+  "split": "validation",
+  "random_ans_idx": 0,
+  "parsed_inputs": "..."
+}
+```
+
+To regenerate the JSONL files (e.g., if source data changes):
+
+```bash
+python convert_to_jsonl.py --output_dir ./data/jsonl
+```
+
 ## Citation
 
 If you find this work useful in your research, please star our repository and consider citing:
